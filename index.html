@@ -25,7 +25,7 @@
         header {
             background: rgba(0, 123, 255, 0.8);
             color: white;
-            padding: 30px;
+            padding: 1.5em;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             position: sticky;
             top: 0;
@@ -34,7 +34,7 @@
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 6vw;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
@@ -43,22 +43,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             background: url('https://example.com/ludo-background.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
-            padding: 50px;
+            padding: 5vw;
             background-attachment: fixed;
         }
 
         .hero h2 {
-            font-size: 3em;
-            margin-bottom: 20px;
+            font-size: 8vw;
+            margin-bottom: 1.5em;
             animation: fadeInDown 1s ease-in-out;
         }
 
         .hero p {
-            font-size: 1.5em;
+            font-size: 5vw;
             animation: fadeInUp 1s ease-in-out;
         }
 
@@ -87,33 +87,34 @@
         /* Game Options */
         #game-options {
             background: white;
-            border-radius: 20px;
+            border-radius: 2em;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            margin: 30px auto;
-            max-width: 800px;
-            padding: 40px;
+            margin: 3vw auto;
+            max-width: 90%;
+            padding: 4vw;
         }
 
         .player-select, .color-select, .sound-toggle {
-            margin: 20px 0;
+            margin: 2vw 0;
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 2vw;
+            flex-wrap: wrap;
         }
 
         button {
-            padding: 15px 30px;
-            border-radius: 30px;
+            padding: 3vw 6vw;
+            border-radius: 3em;
             border: none;
             cursor: pointer;
-            font-size: 1.2em;
+            font-size: 4vw;
             transition: all 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .color-button {
-            width: 120px;
-            height: 120px;
+            width: 20vw;
+            height: 20vw;
             border-radius: 50%;
         }
 
@@ -126,21 +127,21 @@
         #about {
             background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
             color: white;
-            padding: 50px 20px;
-            margin: 40px auto;
-            border-radius: 20px;
-            max-width: 1200px;
+            padding: 5vw 2vw;
+            margin: 5vw auto;
+            border-radius: 2em;
+            max-width: 90%;
             text-align: center;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
         #about h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
+            font-size: 8vw;
+            margin-bottom: 1.5em;
         }
 
         #about p {
-            font-size: 1.2em;
+            font-size: 4vw;
             line-height: 1.6em;
             margin-bottom: 0;
         }
@@ -149,9 +150,9 @@
         footer {
             background-color: #333;
             color: white;
-            padding: 20px;
+            padding: 2vw;
             text-align: center;
-            font-size: 1em;
+            font-size: 3.5vw;
             box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
         }
 
@@ -163,6 +164,37 @@
 
         footer a:hover {
             color: #fda085;
+        }
+
+        /* Media Queries */
+        @media (min-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .hero h2 {
+                font-size: 3em;
+            }
+
+            .hero p {
+                font-size: 1.5em;
+            }
+
+            button {
+                font-size: 1.2em;
+            }
+
+            #about h2 {
+                font-size: 2.5em;
+            }
+
+            #about p {
+                font-size: 1.2em;
+            }
+
+            footer {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
@@ -210,43 +242,15 @@
 
             The origins of Ludo trace back to the ancient Indian game of Pachisi, which has been a part of our cultural heritage for centuries. Ludo, as we know it today, has evolved into a global phenomenon, loved by people of all ages. Ludo Master takes this classic game to the next level by bringing it into the digital era while preserving its traditional charm. The game's rules are straightforward, but mastering it requires skill, strategy, and a bit of luck, making every match a unique experience.
 
-            One of the standout features of Ludo Master is the ability to toggle sound settings. The game comes with immersive sound effects that enhance the gameplay experience, but if you prefer a quieter environment, you can easily turn the sound off with a single click. This flexibility ensures that Ludo Master can be enjoyed in any setting, whether you're playing at home, during a break at work, or while traveling.
+            One of the standout features of Ludo Master is the ability to toggle sound settings. The game comes with immersive sound effects that enhance the gameplay experience, but if you prefer a quieter environment, you can easily turn the sound off with a single click. This flexibility ensures that Ludo Master can be enjoyed in any setting, whether you're at home, on a road trip, or simply relaxing with friends.
 
-            The design of Ludo Master focuses on accessibility and user-friendliness. The interface is intuitive, with clear and concise instructions that guide you through the game setup. The use of JavaScript for interactive elements ensures a smooth and responsive experience, making every click and move feel natural and satisfying. The game’s 2D design pays homage to the traditional board game while incorporating modern aesthetics that appeal to today's players.
-
-            Ludo Master is more than just a game; it's a bridge between generations. It’s a game that parents can play with their children, and friends can enjoy together, creating memories that last a lifetime. The simple yet strategic gameplay fosters healthy competition and encourages social interaction, making it a perfect choice for family game nights, gatherings with friends, or even solo play against computer opponents.
-
-            In developing Ludo Master, we have prioritized creating a game that is not only fun but also fair and balanced. The game mechanics are carefully calibrated to ensure that every player has an equal chance of winning, regardless of their experience level. Whether you're a seasoned Ludo champion or a first-time player, you'll find that Ludo Master offers a level playing field where strategy, planning, and a little bit of luck can lead to victory.
-
-            As developers, we are committed to continuously improving Ludo Master. We value feedback from our players and are always looking for ways to enhance the game. Whether it's adding new features, improving existing ones, or simply making the game more enjoyable, we are dedicated to providing the best Ludo experience possible.
-
-            In conclusion, Ludo Master is more than just a digital board game; it’s a celebration of a timeless classic that has brought people together for centuries. We invite you to download Ludo Master, gather your friends and family, and embark on a journey of strategy, competition, and fun. With its easy-to-use interface, customizable options, and engaging gameplay, Ludo Master is sure to become a favorite in your gaming collection.
-
-            Thank you for choosing Ludo Master - Ludo Board Game. We hope you enjoy playing it as much as we enjoyed creating it. Should you have any questions, feedback, or suggestions, please do not hesitate to contact us at arjun.ad215@gmail.com. Your input is invaluable to us as we continue to develop and improve the game. Happy playing!
+            So why wait? Gather your friends and family, roll the dice, and embark on an exciting journey with Ludo Master. Whether you win or lose, one thing is certain: the memories you create will last a lifetime.
         </p>
     </section>
 
     <footer>
-        <p>Contact us at: <a href="mailto:arjun.ad215@gmail.com">arjun.ad215@gmail.com</a></p>
+        <p>Developed by Arjun Adhikari &copy; 2024 SMAIT Software. All rights reserved. | <a href="#"></a></p>
     </footer>
-
-    <script>
-        let soundOn = true;
-
-        function selectPlayers(num) {
-            alert(num + " players selected!");
-        }
-
-        function selectColor(color) {
-            alert(color + " color selected!");
-        }
-
-        function toggleSound() {
-            soundOn = !soundOn;
-            const button = document.getElementById('sound-toggle-button');
-            button.textContent = soundOn ? "Sound ON" : "Sound OFF";
-        }
-    </script>
 </body>
 
 </html>
