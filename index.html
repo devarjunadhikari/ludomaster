@@ -197,6 +197,25 @@
             }
         }
     </style>
+    <script>
+        // JavaScript to toggle sound on and off
+        let soundOn = true;
+
+        function toggleSound() {
+            soundOn = !soundOn;
+            const soundButton = document.getElementById("sound-toggle-button");
+            soundButton.textContent = soundOn ? "Sound ON" : "Sound OFF";
+
+            // Add logic here to handle actual sound on/off functionality
+            if (soundOn) {
+                console.log("Sound is ON");
+                // Implement sound on logic
+            } else {
+                console.log("Sound is OFF");
+                // Implement sound off logic
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -249,7 +268,7 @@
     </section>
 
     <footer>
-        <p>Developed by Arjun Adhikari &copy; 2024 SMAIT Software. All rights reserved. | <a href="#"></a></p>
+        <p>Developed by Arjun Adhikari &copy; 2024 SMAIT Software.  | <a href="#"></a></p>
     </footer>
 </body>
 
